@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter_web/material.dart';
 import 'package:flutter_basic_layout/bookmarks_page.dart';
 import 'package:flutter_basic_layout/contacts_page.dart';
 import 'package:flutter_basic_layout/favorite_tab.dart';
