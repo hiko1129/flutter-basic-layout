@@ -23,7 +23,7 @@ class Route extends StatefulWidget {
 }
 
 class _RouteState extends State<Route> {
-  final List<Widget> _tabs = [HomeTab(), FavoriteTab(), SearchTab()];
+  final List<Widget> _tabs = [HomeTab(), SearchTab(), FavoriteTab()];
 
   int _currentIndex = 0;
 
