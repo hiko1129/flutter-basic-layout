@@ -1,0 +1,4 @@
+#Sun May 12 18:37:00 JST 2019
+base.0=/Users/hiko1129/AndroidStudioProjects/flutter-basic-layout/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
