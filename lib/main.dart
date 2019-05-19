@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        '/': (context) => InitialRoute(),
+        '/': (context) => HomePage(),
         '/contacts': (context) => ContactsPage(),
         '/bookmarks': (context) => BookmarksPage(),
         '/posts/new': (context) => PostPage()
@@ -23,12 +23,12 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class InitialRoute extends StatefulWidget {
+class HomePage extends StatefulWidget {
   @override
-  _InitialRouteState createState() => _InitialRouteState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _InitialRouteState extends State<InitialRoute> {
+class _HomePageState extends State<HomePage> {
   final List<Widget> _tabs = [HomeTab(), SearchTab(), FavoriteTab()];
 
   int _currentIndex = 0;
