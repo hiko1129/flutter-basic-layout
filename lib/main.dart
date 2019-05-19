@@ -13,6 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Route(),
+      routes: {
+        '/contacts': (context) => ContactsPage(),
+        '/bookmarks': (context) => BookmarksPage(),
+        '/posts/new': (context) => PostPage()
+      },
     );
   }
 }
@@ -39,13 +44,7 @@ class _RouteState extends State<Route> {
             ListTile(
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return ContactsPage();
-                    },
-                  ),
-                );
+                Navigator.pushNamed(context, '/contacts');
               },
               title: Row(
                 children: <Widget>[
@@ -66,13 +65,7 @@ class _RouteState extends State<Route> {
             ListTile(
               onTap: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return BookmarksPage();
-                    },
-                  ),
-                );
+                Navigator.pushNamed(context, '/bookmarks');
               },
               title: Row(
                 children: <Widget>[
@@ -115,17 +108,8 @@ class _RouteState extends State<Route> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: () => {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) {
-                    return PostPage();
-                  },
-                ),
-              ),
-            },
-      ),
+          child: Icon(Icons.add),
+          onPressed: () => {Navigator.pushNamed(context, '/posts/new')}),
     );
   }
 }
