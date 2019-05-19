@@ -1,4 +1,0 @@
-#Sun May 19 16:40:43 JST 2019
-base.0=/Users/hiko1129/workspace/hiko1129/flutter-basic-layout/build/app/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex
